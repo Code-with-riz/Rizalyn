@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+
+  <nav class="sidebar" aria-label="Main navigation">
+    <div class="sidebar-logo"><span>R</span></div>
+    <button class="nav-item" aria-label="Home" onclick="window.location.href='../Hero page/index.html'">
+      <i class="ti ti-home" aria-hidden="true"></i>
+      <span>Home</span>
+    </button>
+    <button class="nav-item" aria-label="About Me" onclick="window.location.href='../About page/about.html'">
+      <i class="ti ti-user" aria-hidden="true"></i>
+      <span>About</span>
+    </button>
+    <button class="nav-item active" aria-label="Projects" onclick="window.location.href='../Project page/projects.html'">
+      <i class="ti ti-layout-grid" aria-hidden="true"></i>
+      <span>Projects</span>
+    </button>
+    <button class="nav-item" aria-label="Contact" onclick="window.location.href='../Contact page/contacts.html'">
+      <i class="ti ti-mail" aria-hidden="true"></i>
+      <span>Contact</span>
+    </button>
+    <div class="sidebar-spacer"></div>
+    
+  </nav>
+
+  <main class="main">
+    <div class="projects-card">
+
+      <h2 class="section-label">Projects</h2>
+      <p class="section-sub">"Management is, above all, a practice where art, science, and craft meet."</p>
+      <div class="section-divider"></div>
+
+      <div class="projects-grid">
+
+        <div class="proj-card">
+          <div class="proj-icon">
+            <i class="ti ti-chart-dots" aria-hidden="true"></i>
+          </div>
+          <p class="proj-title">Data Science</p>
+          <p class="proj-desc">Currently working on a data science project. Soon it will be complete.</p>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon">
+            <i class="ti ti-code" aria-hidden="true"></i>
+          </div>
+          <p class="proj-title">Web Development</p>
+          <p class="proj-desc">Developed web projects using HTML, CSS, and Flask.</p>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon">
+            <i class="ti ti-brand-python" aria-hidden="true"></i>
+          </div>
+          <p class="proj-title">Mini Python Project</p>
+          <p class="proj-desc">Made three small projects using Python packages.</p>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-icon">
+            <i class="ti ti-device-mobile" aria-hidden="true"></i>
+          </div>
+          <p class="proj-title">IoT</p>
+          <p class="proj-desc">Completed one IoT-based project and working on two more.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="projects.js"></script>
+</body>
+</html>
