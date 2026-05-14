@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -30,26 +30,78 @@
       <span>Contact</span>
     </button>
 
-    <div class="sidebar-spacer"></div>  
+    <div class="sidebar-spacer"></div>
   </nav>
 
   <main class="main">
     <div class="card">
 
-      <div class="avatar-ring">
-        <img src="mypicriz.jpg" alt="Rizalyn Magada" class="avatar-photo" />
+      <!-- Top: avatar + name block -->
+      <div class="hero-top">
+        <div class="avatar-ring">
+          <img src="mypicriz.jpg" alt="Rizalyn Magada" class="avatar-photo" />
+        </div>
+
+        <div class="hero-intro">
+          <h1 class="name">Rizalyn Magada</h1>
+          <p class="title">Creative Developer &amp; Designer</p>
+          <div class="divider"></div>
+
+          <div class="bio-wrap">
+            <p class="bio" id="bio">
+              "Coding my way to the future" <br><br>
+              Being an IT student is more than just learning how to code or fix computers. It's about having the patience to solve problems, and an IT student doesn't just study technology — they create possibilities.
+            </p>
+            <button class="read-more-btn" id="readMoreBtn">Read more</button>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn" onclick="window.location.href='../Project page/projects.html'">
+              <i class="ti ti-layout-grid"></i> View Projects
+            </button>
+            <button class="btn btn-outline" onclick="window.location.href='../Contact page/contacts.html'">
+              <i class="ti ti-mail"></i> Contact Me
+            </button>
+          </div>
+        </div>
       </div>
 
-      <h1 class="name">Rizalyn Magada</h1>
-      <p class="title">Creative Developer &amp; Designer</p>
-      <div class="divider"></div>
+      <!-- Divider -->
+      <div class="section-divider"></div>
 
-      <div class="bio-wrap">
-        <p class="bio" id="bio">
-          "Coding my way to the future" <br><br>
-          Being an IT student is more than just learning how to code or fix computers. It's about having the patience to solve problems, and an IT student doesn't just study technology — they create possibilities.
-        </p>
-        <button class="read-more-btn" id="readMoreBtn">Read more</button>
+      <!-- Bottom: quick-facts strip -->
+      <div class="facts-strip">
+        <div class="fact-item">
+          <i class="ti ti-school"></i>
+          <div class="fact-text">
+            <span class="fact-value">IT Student</span>
+            <span class="fact-label">Current role</span>
+          </div>
+        </div>
+        <div class="fact-sep"></div>
+        <div class="fact-item">
+          <i class="ti ti-map-pin"></i>
+          <div class="fact-text">
+            <span class="fact-value">Philippines</span>
+            <span class="fact-label">Based in</span>
+          </div>
+        </div>
+        <div class="fact-sep"></div>
+        <div class="fact-item">
+          <i class="ti ti-sparkles"></i>
+          <div class="fact-text">
+            <span class="fact-value">Art &amp; Code</span>
+            <span class="fact-label">Passion</span>
+          </div>
+        </div>
+        <div class="fact-sep"></div>
+        <div class="fact-item">
+          <i class="ti ti-device-laptop"></i>
+          <div class="fact-text">
+            <span class="fact-value">Open to work</span>
+            <span class="fact-label">Status</span>
+          </div>
+        </div>
       </div>
 
     </div>
