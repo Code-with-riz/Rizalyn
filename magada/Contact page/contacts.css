@@ -1,0 +1,218 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f0ede8;
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: 72px;
+  background: #ffffff;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 24px;
+  gap: 6px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  min-height: 500px;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+}
+
+.sidebar-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c5cbf 0%, #a78de8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  flex-shrink: 0;
+}
+
+.sidebar-logo span {
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nav-item {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  color: #999999;
+  border: none;
+  background: transparent;
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nav-item i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.nav-item span {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.nav-item:hover {
+  background: #f5f0ff;
+  color: #7c5cbf;
+}
+
+.nav-item.active {
+  background: #f0ebff;
+  color: #7c5cbf;
+}
+
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 24px;
+  background: linear-gradient(180deg, #7c5cbf, #a78de8);
+  border-radius: 0 3px 3px 0;
+}
+
+.sidebar-spacer {
+  flex: 1;
+}
+
+/* ── Main ── */
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+}
+
+/* ── Contact card ── */
+.contact-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 48px;
+  max-width: 780px;
+  width: 100%;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.07), 0 2px 8px rgba(0, 0, 0, 0.04);
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-info {
+  flex: 1;
+}
+
+/* ── Section heading ── */
+.section-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  color: #1a1a1a;
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+}
+
+/* ── Social links ── */
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  color: #444444;
+  font-size: 0.93rem;
+  font-weight: 300;
+  transition: color 0.18s ease, padding-left 0.18s ease;
+}
+
+.social-link:last-child {
+  border-bottom: none;
+}
+
+.social-link:hover {
+  color: #7c5cbf;
+  padding-left: 6px;
+}
+
+.social-link:hover .social-icon {
+  background: linear-gradient(135deg, #7c5cbf, #a78de8);
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #a78de8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #7c5cbf;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.social-icon i {
+  font-size: 16px;
+}
+
+/* ── Profile photo ── */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #7c5cbf 0%, #a78de8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(124, 92, 191, 0.28);
+}
+
+.profile-photo i {
+  font-size: 52px;
+  color: rgba(255, 255, 255, 0.7);
+}
