@@ -166,6 +166,12 @@ body {
   gap: 20px;
 }
 
+/* ── Linked card reset ── */
+a.proj-card {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ── Project card ── */
 .proj-card {
   background: #fafafa;
