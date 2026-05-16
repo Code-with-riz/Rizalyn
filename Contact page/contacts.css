@@ -201,8 +201,8 @@ body {
 
 /* ── Profile photo ── */
 .profile-photo {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 220px;
   border-radius: 20px;
   background: linear-gradient(135deg, #7c5cbf 0%, #a78de8 100%);
   padding: 3px;
@@ -215,7 +215,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   border-radius: 17px;
   display: block;
   border: 3px solid #ffffff;
