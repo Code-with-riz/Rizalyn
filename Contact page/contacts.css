@@ -6,7 +6,7 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: #f0ede8;
+  background: linear-gradient(135deg, #c4aff5 0%, #a8cef8 50%, #cdbdf5 100%);
   min-height: 100vh;
   display: flex;
 }
